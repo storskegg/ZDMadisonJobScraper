@@ -12,7 +12,7 @@ def spam_my_phone()
     })
 
     response = sns.publish({
-        phone_number: ENV['PHONE'],
+        topic_arn: 'arn:aws:sns:us-east-1:076479453187:NotifyMe',
         message: 'Elizabeth! This is the big one! Submit your resume to ZD, Dummy!'
     })
 
@@ -23,6 +23,6 @@ doc = Nokogiri::HTML(open(PAGE_URL))
 
 jobs = doc.css('.engineeringproduct').xpath("..").css('li > h4')
 
-if jobs.count === CUR_COUNT
+if jobs.count != CUR_COUNT
     spam_my_phone()
 end
