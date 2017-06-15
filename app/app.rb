@@ -25,6 +25,6 @@ doc = Nokogiri::HTML(open(PAGE_URL))
 
 jobs = doc.css('.engineeringproduct').xpath("..").css('li > h4')
 
-if jobs.count != CUR_COUNT
+# if jobs.count != CUR_COUNT
     spam_my_phone()
-end
+# end
