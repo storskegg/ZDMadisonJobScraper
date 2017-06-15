@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     aws-sdk (2.9.40)
       aws-sdk-resources (= 2.9.40)
@@ -12,6 +13,7 @@ GEM
     mini_portile2 (2.2.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
+    rake (12.0.0)
 
 PLATFORMS
   ruby
@@ -19,6 +21,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk (>= 2.9.40)
   nokogiri (>= 1.8.0)
+  rake (>= 12.0.0)
 
 BUNDLED WITH
    1.15.1
