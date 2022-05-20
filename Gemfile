@@ -3,5 +3,5 @@ ruby '~> 2.4.1'
 source 'https://rubygems.org'
 
 gem 'aws-sdk', '>= 2.9.40'
-gem 'nokogiri', '>= 1.8.0'
+gem 'nokogiri', '>= 1.13.6'
 gem 'rake', '>= 12.0.0'
